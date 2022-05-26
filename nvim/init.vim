@@ -9,6 +9,7 @@ call plug#begin()
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'lervag/vimtex'
  Plug 'nvie/vim-flake8'
+ Plug 'dylanaraps/wal'
 call plug#end()
 
 let g:vimtex_view_general_viewer = 'zathura'
