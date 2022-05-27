@@ -10,6 +10,8 @@ call plug#begin()
  Plug 'lervag/vimtex'
  Plug 'nvie/vim-flake8'
  Plug 'dylanaraps/wal'
+ Plug 'davidgranstrom/nvim-markdown-preview'
+ Plug 'jbyuki/nabla.nvim'
 call plug#end()
 
 colorscheme wal
@@ -23,3 +25,9 @@ let g:vimtex_quickfix_open_on_warning = 0
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+let g:nvim_markdown_preview_format = 'markdown'
+let g:nvim_markdown_preview_theme = 'solarized-light'
+
+autocmd FileType tex VimtexCompile
+nnoremap <leader>p :lua require("nabla").popup()<CR>
