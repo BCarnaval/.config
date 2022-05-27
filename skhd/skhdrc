@@ -128,6 +128,8 @@ hyper - h : yabai -m window --toggle float;\
 hyper - t : yabai -m window --toggle zoom-parent
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
+hyper - left : yabai -m space --focus prev && landscape
+
 # send window to desktop
 alt - x : yabai -m window --space recent
 alt - 1 : yabai -m window --space 1

@@ -12,6 +12,9 @@ call plug#begin()
  Plug 'dylanaraps/wal'
 call plug#end()
 
+colorscheme wal
+
+syntax enable
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_fold_enabled = 1
 let g:vimtex_imaps_enabled = 1
