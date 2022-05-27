@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 limelight -m config width 2
-limelight -m config radius 10
+limelight -m config radius 12
 limelight -m config placement exterior
 limelight -m config active_color #FFE4E1
 limelight -m config normal_color #FFE4E1
