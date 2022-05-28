@@ -15,14 +15,10 @@ call plug#begin()
  Plug 'preservim/nerdcommenter'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'lervag/vimtex'
- "PYWAL
+ "
+ "PYWAL & THEMES
  Plug 'dylanaraps/wal'
  Plug 'AlphaTechnolog/pywal.nvim', { 'as': 'pywal' }
- "
- "MARKDOWN
- Plug 'davidgranstrom/nvim-markdown-preview'
- Plug 'catppuccin/nvim', {'as': 'catppuccin'}
- Plug 'rcarriga/nvim-notify'
  Plug 'glepnir/dashboard-nvim'
  Plug 'liuchengxu/vim-clap'
  Plug 'romgrk/barbar.nvim'
@@ -31,6 +27,9 @@ call plug#begin()
  Plug 'nvim-lualine/lualine.nvim'
  Plug 'nvim-lua/plenary.nvim'
  Plug 'nvim-telescope/telescope.nvim'
+ "
+ "MARKDOWN
+ Plug 'davidgranstrom/nvim-markdown-preview'
  "
  "PYTHON
  Plug 'nvie/vim-flake8'
