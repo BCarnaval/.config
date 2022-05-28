@@ -121,14 +121,16 @@ hyper - y : yabai -m space --mirror y-axis
 hyper - b : yabai -m space --balance
 
 # float / unfloat window and center on screen
-hyper - h : yabai -m window --toggle float;\
+hyper - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
 
 # toggle window zoom
 hyper - t : yabai -m window --toggle zoom-parent
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
-hyper - left : yabai -m space --focus prev && landscape
+# focus window
+hyper - left : yabai -m window --focus prev
+hyper - right : yabai -m window --focus next
 
 # send window to desktop
 alt - x : yabai -m window --space recent
