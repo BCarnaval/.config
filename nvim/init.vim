@@ -33,11 +33,9 @@ call plug#begin()
  "
  "PYTHON
  Plug 'nvie/vim-flake8'
- Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
  Plug 'jiangmiao/auto-pairs'
  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
  Plug 'deoplete-plugins/deoplete-jedi'
- Plug 'Shougo/deoplete.nvim',
  Plug 'davidhalter/jedi-vim'
  Plug 'sbdchd/neoformat'
  Plug 'neomake/neomake'
@@ -86,7 +84,7 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 
-"MarkdownPreview settings
+"Markdown settings
 "-----------------------------------------------------
 let g:nvim_markdown_preview_format = 'markdown'
 let g:nvim_markdown_preview_theme = 'solarized-light'
