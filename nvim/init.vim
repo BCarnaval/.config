@@ -37,6 +37,7 @@ call plug#begin()
  Plug 'plasticboy/vim-markdown'
  Plug 'vim-pandoc/vim-pandoc-syntax'
  Plug 'ncm2/ncm2-markdown-subscope'
+ Plug 'raghur/vim-ghost'
 
  "
  "PYTHON
@@ -90,6 +91,7 @@ autocmd FileType tex VimtexCompile
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "my_snips"]
 
 
 "Markdown settings
@@ -110,7 +112,15 @@ let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1  " for YAML format
 let g:vim_markdown_toml_frontmatter = 1  " for TOML format
 let g:vim_markdown_json_frontmatter = 1  " for JSON format
-
+function! s:SetupGhostBuffer()
+    if match(expand("%:a"), '\v/ghost-(overleaf)\.com-')
+        set ft=tex
+    endif
+endfunction
+augroup vim-ghost
+    au!
+    au User vim-ghost#connected call s:SetupGhostBuffer()
+augroup END
 
 "Telescope settings
 "-----------------------------------------------------
@@ -139,6 +149,11 @@ autocmd FileType python set expandtab
 autocmd FileType python set autoindent
 autocmd FileType python set fileformat=unix
 
+"Markdown settings
+"-----------------------------------------------------
+
+autocmd FileType md set textwidth=79
+autocmd FileType md set tabstop=2
 
 
 
