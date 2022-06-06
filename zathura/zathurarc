@@ -1,3 +1,5 @@
+include catppuccin
+
 set font "MesloLGS NF 12"
 set window-title-basename "true"
 set selection-clipboard "clipboard"
@@ -9,7 +11,6 @@ set recolor "false"
 set adjust-open	"width"
 set statusbar-h-padding	10
 set statusbar-v-padding	10
-include nord_lake
 
 map u scroll half-up
 map d scroll half-down
