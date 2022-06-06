@@ -17,8 +17,6 @@ call plug#begin()
  Plug 'lervag/vimtex'
  "
  "PYWAL & THEMES
- Plug 'dylanaraps/wal'
- Plug 'AlphaTechnolog/pywal.nvim', { 'as': 'pywal' }
  Plug 'glepnir/dashboard-nvim'
  Plug 'liuchengxu/vim-clap'
  Plug 'romgrk/barbar.nvim'
@@ -27,9 +25,9 @@ call plug#begin()
  Plug 'nvim-lualine/lualine.nvim'
  Plug 'nvim-lua/plenary.nvim'
  Plug 'nvim-telescope/telescope.nvim'
+ Plug 'catppuccin/nvim', {'as': 'catppuccin'}
  "
  "MARKDOWN
- Plug 'davidgranstrom/nvim-markdown-preview'
  " tabular plugin is used to format tables
  Plug 'godlygeek/tabular'
  "JSON front matter highlight plugin
@@ -61,8 +59,9 @@ lua << EOF
   require("which-key").setup {
   }
   require('lualine').setup {
-  options = { theme  = 'pywal' }
+	  options = { theme  = 'catppuccin' }
   }
+  local catppuccin = require("catppuccin")
 EOF
 
 let g:deoplete#enable_at_startup = 1
@@ -75,7 +74,8 @@ nnoremap <C-n> :NERDTree<CR>
 
 "Pywal settings
 "------------------------------------------------------
-colorscheme pywal
+let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
+colorscheme catppuccin
 
 "Vimtex settings
 "------------------------------------------------------
@@ -96,8 +96,6 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "my_snips"]
 
 "Markdown settings
 "-----------------------------------------------------
-let g:nvim_markdown_preview_format = 'markdown'
-let g:nvim_markdown_preview_theme = 'solarized-light'
 " disable header folding
 let g:vim_markdown_folding_disabled = 1
 
@@ -154,16 +152,5 @@ autocmd FileType python set fileformat=unix
 
 autocmd FileType md set textwidth=79
 autocmd FileType md set tabstop=2
-
-
-
-
-
-
-
-
-
-
-
 
 
