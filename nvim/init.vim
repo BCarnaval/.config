@@ -28,15 +28,12 @@ call plug#begin()
  Plug 'catppuccin/nvim', {'as': 'catppuccin'}
  "
  "MARKDOWN
- " tabular plugin is used to format tables
  Plug 'godlygeek/tabular'
- "JSON front matter highlight plugin
  Plug 'elzr/vim-json'
  Plug 'plasticboy/vim-markdown'
  Plug 'vim-pandoc/vim-pandoc-syntax'
  Plug 'ncm2/ncm2-markdown-subscope'
  Plug 'raghur/vim-ghost'
-
  "
  "PYTHON
  Plug 'nvie/vim-flake8'
@@ -47,7 +44,6 @@ call plug#begin()
  Plug 'sbdchd/neoformat'
  Plug 'neomake/neomake'
 call plug#end()
-
 
 "Global settings
 "------------------------------------------------------
@@ -66,11 +62,9 @@ EOF
 
 let g:deoplete#enable_at_startup = 1
 
-
 "Nerd settings (tree & commenter)
 "------------------------------------------------------
 nnoremap <C-n> :NERDTree<CR>
-
 
 "Pywal settings
 "------------------------------------------------------
@@ -85,14 +79,12 @@ let g:vimtex_imaps_enabled = 1
 let g:vimtex_quickfix_open_on_warning = 0
 autocmd FileType tex VimtexCompile
 
-
 "UltiSnips settings
 "-----------------------------------------------------
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsSnippetDirectories = ["UltiSnips", "my_snips"]
-
 
 "Markdown settings
 "-----------------------------------------------------
@@ -134,7 +126,6 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
-
 "Python & PEP8 settings
 "-----------------------------------------------------
 let g:neomake_python_enabled_makers = ['pylint']
@@ -149,7 +140,6 @@ autocmd FileType python set fileformat=unix
 
 "Markdown settings
 "-----------------------------------------------------
-
 autocmd FileType md set textwidth=79
 autocmd FileType md set tabstop=2
 
