@@ -4,11 +4,11 @@
 # Ignore everything by default.
 
 #Themes folders
-!themes/
+themes/
 
-!coc/
+coc/
 
-!.DS_Store
+*.DS_Store
 
 # Bash stuff (profile just sources bashrc, since it's the only thing sourced
 # when a shell is a login shell).
