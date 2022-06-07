@@ -2,7 +2,6 @@
 # nice explicit list for documentation's sake.
 
 # Ignore everything by default.
-*
 
 #Themes folders
 !themes/
