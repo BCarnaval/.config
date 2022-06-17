@@ -36,14 +36,17 @@ call plug#begin()
  Plug 'raghur/vim-ghost'
  "
  "PYTHON
- Plug 'nvie/vim-flake8'
+ Plug 'dense-analysis/ale'
  Plug 'jiangmiao/auto-pairs'
  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
  Plug 'deoplete-plugins/deoplete-jedi'
  Plug 'davidhalter/jedi-vim'
  Plug 'sbdchd/neoformat'
  Plug 'neomake/neomake'
-call plug#end()
+ "
+ "TEXT FILES
+ Plug 'mechatroner/rainbow_csv'
+ call plug#end()
 
 "Global settings
 "------------------------------------------------------
@@ -61,6 +64,10 @@ lua << EOF
 EOF
 
 let g:deoplete#enable_at_startup = 1
+
+"Map jk to escape TERM
+inoremap jk <Esc>
+tnoremap jk <C-\><C-n>
 
 "Nerd settings (tree & commenter)
 "------------------------------------------------------
@@ -128,7 +135,7 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 "Python & PEP8 settings
 "-----------------------------------------------------
-let g:neomake_python_enabled_makers = ['pylint']
+let b:ale_fixers = {'python': ['autopep8']}
 
 autocmd FileType python set tabstop=4
 autocmd FileType python set softtabstop=4
@@ -142,5 +149,19 @@ autocmd FileType python set fileformat=unix
 "-----------------------------------------------------
 autocmd FileType md set textwidth=79
 autocmd FileType md set tabstop=2
+
+"BarBar settings
+"
+nnoremap <leader>z :BufferPrevious<cr>
+nnoremap <leader>x :BufferNext<cr>
+nnoremap <leader>q :BufferClose<cr>
+
+
+
+
+
+
+
+
 
 

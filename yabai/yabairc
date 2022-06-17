@@ -56,7 +56,6 @@ yabai -m space 6 --label VI
 
 # float system preferences. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^Music$" manage=off
-yabai -m rule --add app="^kitty$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
