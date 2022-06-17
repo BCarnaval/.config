@@ -28,20 +28,42 @@ snippet fig "include md image"
 ![$1]($2)
 endsnippet
 
-snippet ( "parenthesis"
-\Big(\Big)
+snippet sdiff "stats derivative"
+\Big(\frac{\partial $1}{\partial $2}\Big)_{$3}
 endsnippet
 
-snippet pd "partial derivative"
-\partial $1
+snippet pdiff "partial derivative"
+\frac{\partial $1}{\partial $2}
 endsnippet
 
-snippet ^ "exponent"
-^{$1}
+snippet diff "derivative"
+\frac{d $1}{d $2}
 endsnippet
 
-snippet _ "indice"
-_{$1}
+snippet vec "vector"
+\vec{$1}
 endsnippet
 
+snippet int "integral"
+\int_{$1}^{$2}
+endsnippet
+
+snippet exp "exponential"
+e^{$1}
+endsnippet
+
+snippet mean "bar mean notation"
+\bar{$1}
+endsnippet
+
+snippet pmat "get pmatrix"
+\begin{pmatrix}
+	$1 & \\\
+	$2 & \\\
+\end{pmatrix}
+endsnippet
+
+snippet adag "get scale operator"
+a^{\dagger}
+endsnippet
 
