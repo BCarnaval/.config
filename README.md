@@ -1,3 +1,3 @@
 ### Dotfiles
 
-![](screenshots/read_me_2.png) ![](screenshots/read_me_3.png)
+![](screenshots/screenshots_1.png)
