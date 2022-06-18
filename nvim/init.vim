@@ -26,6 +26,7 @@ call plug#begin()
  Plug 'nvim-lua/plenary.nvim'
  Plug 'nvim-telescope/telescope.nvim'
  Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+ Plug 'lilydjwg/colorizer'
  "
  "MARKDOWN
  Plug 'godlygeek/tabular'
