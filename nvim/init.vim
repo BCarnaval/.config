@@ -40,7 +40,6 @@ call plug#begin()
  Plug 'dense-analysis/ale'
  Plug 'jiangmiao/auto-pairs'
  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
- Plug 'deoplete-plugins/deoplete-jedi'
  Plug 'davidhalter/jedi-vim'
  Plug 'sbdchd/neoformat'
  Plug 'neomake/neomake'
