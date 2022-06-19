@@ -44,6 +44,9 @@ call plug#begin()
  Plug 'sbdchd/neoformat'
  Plug 'neomake/neomake'
  "
+ "RUST
+ Plug 'rust-lang/rust.vim'
+ "
  "TEXT FILES
  Plug 'mechatroner/rainbow_csv'
  call plug#end()
