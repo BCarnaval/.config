@@ -125,7 +125,6 @@ hyper - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
 
 # toggle window zoom
-hyper - t : yabai -m window --toggle zoom-parent
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
 # focus window
