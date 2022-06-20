@@ -158,13 +158,3 @@ autocmd FileType md set tabstop=2
 nnoremap <leader>z :BufferPrevious<cr>
 nnoremap <leader>x :BufferNext<cr>
 nnoremap <leader>q :BufferClose<cr>
-
-
-
-
-
-
-
-
-
-
