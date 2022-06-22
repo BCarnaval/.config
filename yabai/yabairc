@@ -61,6 +61,7 @@ yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Microsoft Teams$" manage=off
+yabai -m rule --add app="^BasicTimer$" manage=off
 
 # float system preferences
 yabai -m rule --add app="^System Information$" manage=off
