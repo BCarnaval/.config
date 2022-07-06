@@ -69,8 +69,8 @@ EOF
 let g:deoplete#enable_at_startup = 1
 
 "Map jk to escape TERM
-inoremap jk <Esc>
-tnoremap jk <C-\><C-n>
+inoremap q<space> <Esc>
+tnoremap q<space> <C-\><C-n>
 
 "Nerd settings (tree & commenter)
 "------------------------------------------------------
