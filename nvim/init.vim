@@ -27,6 +27,7 @@ call plug#begin()
  Plug 'nvim-telescope/telescope.nvim'
  Plug 'catppuccin/nvim', {'as': 'catppuccin'}
  Plug 'lilydjwg/colorizer'
+ Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
  "
  "MARKDOWN
  Plug 'godlygeek/tabular'

@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-limelight -m config width 2
-limelight -m config radius 12
-limelight -m config placement exterior
-limelight -m config active_color #DDA0DD
-limelight -m config normal_color #DDA0DD
-
-echo "limelight configuration loaded.."
