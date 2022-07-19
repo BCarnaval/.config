@@ -12,9 +12,10 @@
 #
 #   mode         = 'name of mode' | <mode> ',' <mode>
 #
-#   action       = <keysym> '[' <proc_map_lst> ']' | <keysym> '->' '[' <proc_map_lst> ']'
-#                  <keysym> ':' <command>          | <keysym> '->' ':' <command>
-#                  <keysym> ';' <mode>             | <keysym> '->' ';' <mode>
+#   action       = <keysym> '[' <proc_map_lst> ']' | <keysym> '->' \
+#                                                        '[' <proc_map_lst> ']'
+#                  <keysym> ':' <command> | <keysym> '->' ':' <command>
+#                  <keysym> ';' <mode> | <keysym> '->' ';' <mode>
 #
 #   keysym       = <mod> '-' <key> | <key>
 #
@@ -48,7 +49,8 @@
 #
 #   *            = matches every application not specified in <proc_map_lst>
 #
-#   ~            = application is unbound and keypress is forwarded per usual, when specified in a <proc_map>
+#   ~            = application is unbound and keypress is forwarded per usual, 
+#                                               when specified in a <proc_map>
 #
 # A mode is declared according to the following rules:
 #
@@ -81,10 +83,14 @@ hyper - z : brew services restart yabai
 hyper - x : brew services restart skhd
 
 # Moving windows
-hyper - w : yabai -m window --warp north || $(yabai -m window --display north; yabai -m display --focus north)
-hyper - a : yabai -m window --warp west || $(yabai -m window --display west; yabai -m display --focus west)
-hyper - s : yabai -m window --warp south || $(yabai -m window --display south; yabai -m display --focus south)
-hyper - d : yabai -m window --warp east || $(yabai -m window --display east; yabai -m display --focus east)
+hyper - w : yabai -m window --warp north || \
+            $(yabai -m window --display north; yabai -m display --focus north)
+hyper - a : yabai -m window --warp west || \
+            $(yabai -m window --display west; yabai -m display --focus west)
+hyper - s : yabai -m window --warp south || \
+            $(yabai -m window --display south; yabai -m display --focus south)
+hyper - d : yabai -m window --warp east || \
+            $(yabai -m window --display east; yabai -m display --focus east)
 
 # open terminals
 hyper - return : open -a /Applications/kitty.app/Contents/MacOS/kitty
