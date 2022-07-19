@@ -138,3 +138,11 @@ alt - 2 : yabai -m window --space 2
 alt - 3 : yabai -m window --space 3
 alt - 4 : yabai -m window --space 4
 alt - 5 : yabai -m window --space 5
+
+# send window to desktop and follow focus
+hyper + alt - 1 : yabai -m window --space  1; yabai -m space --focus 1
+hyper + alt - 2 : yabai -m window --space  2; yabai -m space --focus 2
+hyper + alt - 3 : yabai -m window --space  3; yabai -m space --focus 3
+hyper + alt - 4 : yabai -m window --space  4; yabai -m space --focus 4
+hyper + alt - 5 : yabai -m window --space  5; yabai -m space --focus 5
+
