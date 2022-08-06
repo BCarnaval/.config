@@ -75,6 +75,10 @@ yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add title='^Archive Utility$' manage=off
 yabai -m rule --add title='Settings$' manage=off
 
+#Particular opacity
+yabai -m rule --add app="Obsidian" opacity=1.0
+yabai -m rule --add app="Kitty" opacity=1.0
+
 # Some Settings For Simple-Bar
 # Refresh spaces widget on space change
 yabai -m signal --add event=space_changed action="osascript -e 'tell \

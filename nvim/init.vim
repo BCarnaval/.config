@@ -50,13 +50,25 @@ call plug#begin()
  "
  "TEXT FILES
  Plug 'mechatroner/rainbow_csv'
+ Plug 'hura/vim-asymptote'
  call plug#end()
 
 "Global settings
 "------------------------------------------------------
 syntax enable
-
-set nu
+set noerrorbells
+set number
+set autoindent
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nowrap
+set smartcase
+set noswapfile
+set incsearch
+set hlsearch
+set whichwrap+=<,>,[,]
 
 lua << EOF
   require("which-key").setup {
@@ -77,7 +89,7 @@ tnoremap q<space> <C-\><C-n>
 "------------------------------------------------------
 nnoremap <C-n> :NERDTree<CR>
 
-"Pywal settings
+"Theme settings
 "------------------------------------------------------
 let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
 colorscheme catppuccin
@@ -101,6 +113,8 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "my_snips"]
 "-----------------------------------------------------
 " disable header folding
 let g:vim_markdown_folding_disabled = 1
+autocmd FileType md set textwidth=79
+autocmd FileType md set tabstop=2
 
 " do not use conceal feature, the implementation is not so good
 let g:vim_markdown_conceal = 0
@@ -149,13 +163,9 @@ autocmd FileType python set expandtab
 autocmd FileType python set autoindent
 autocmd FileType python set fileformat=unix
 
-"Markdown settings
-"-----------------------------------------------------
-autocmd FileType md set textwidth=79
-autocmd FileType md set tabstop=2
-
 "BarBar settings
 "
 nnoremap <leader>z :BufferPrevious<cr>
 nnoremap <leader>x :BufferNext<cr>
-nnoremap <leader>q :BufferClose<cr>
+nnoremap <leader>q :BufferClose<cr>a
+
