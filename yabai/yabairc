@@ -47,12 +47,12 @@ yabai -m config window_gap                   05
 
 
 # Renaming the spaces
-yabai -m space 1 --label I
-yabai -m space 2 --label II
-yabai -m space 3 --label III
-yabai -m space 4 --label IV
-yabai -m space 5 --label V
-yabai -m space 6 --label VI
+yabai -m space 1 --label 'I'
+yabai -m space 2 --label 'II'
+yabai -m space 3 --label 'III'
+yabai -m space 4 --label 'IV'
+yabai -m space 5 --label 'V'
+yabai -m space 6 --label 'VI'
 
 # float applications. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^Music$" manage=off
@@ -74,10 +74,6 @@ yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add title='^Archive Utility$' manage=off
 yabai -m rule --add title='Settings$' manage=off
-
-#Particular opacity
-yabai -m rule --add app="Obsidian" opacity=1.0
-yabai -m rule --add app="Kitty" opacity=1.0
 
 # Some Settings For Simple-Bar
 # Refresh spaces widget on space change
