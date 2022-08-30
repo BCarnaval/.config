@@ -6,6 +6,8 @@
 #Themes folders
 themes/
 
+gh/
+
 coc/
 
 *.DS_Store
