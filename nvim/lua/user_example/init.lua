@@ -45,6 +45,10 @@ local config = {
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
+      tabstop = 8,
+      shiftwidth = 4,
+      expandtab = true,
+      wrap = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
