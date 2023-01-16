@@ -49,7 +49,7 @@
 #
 #   *            = matches every application not specified in <proc_map_lst>
 #
-#   ~            = application is unbound and keypress is forwarded per usual, 
+#   ~            = application is unbound and keypress is forwarded per usual,
 #                                               when specified in a <proc_map>
 #
 # A mode is declared according to the following rules:
