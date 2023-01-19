@@ -62,7 +62,7 @@ yabai -m rule --add app="^Preview$" manage=off
 yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="^CCleaner$" manage=off
 yabai -m rule --add app="^CleanMyMac X$" manage=off
-yabai -m rule --add app="^Outlook$" manage=off
+yabai -m rule --add app="^Microsoft Outlook$" manage=off
 
 # float system preferences
 yabai -m rule --add app="^System Information$" manage=off
