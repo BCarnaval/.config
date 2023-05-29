@@ -23,12 +23,14 @@ yabai -m config window_topmost               off
 yabai -m config window_shadow                off
 yabai -m config window_opacity               on
 yabai -m config window_opacity_duration      0.0
-yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        1.0
+yabai -m config active_window_opacity        0.95
+yabai -m config normal_window_opacity        0.95
 yabai -m config window_border                on
 yabai -m config window_border_width          2
 yabai -m config window_border_radius         0
+yabai -m config window_border_blur           off
 yabai -m config window_animation_duration    0.1
+yabai -m config window_animation_frame_rate  120
 yabai -m config normal_window_border_color   0xffd8bfd8
 yabai -m config active_window_border_color   0xffe9fdce
 yabai -m config insert_feedback_color        0xffd8bfd8
@@ -63,7 +65,8 @@ yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="^CCleaner$" manage=off
 yabai -m rule --add app="^CleanMyMac X$" manage=off
 yabai -m rule --add app="^Microsoft Outlook$" manage=off
-yabai -m rule --add app="^zoom$" manage=off
+yabai -m rule --add app="^Zoom$" manage=off
+yabai -m rule --add app="^kitty$" manage=off
 
 # float system preferences
 yabai -m rule --add app="^System Information$" manage=off
