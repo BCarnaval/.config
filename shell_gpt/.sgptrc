@@ -1,7 +1,0 @@
-OPENAI_API_KEY=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
-OPENAI_API_HOST=https://api.openai.com
-CHAT_CACHE_LENGTH=1000
-CHAT_CACHE_PATH=/var/folders/_8/jhkbxy_x5cbch45zszwb_g200000gn/T/shell_gpt/chat_cache
-CACHE_LENGTH=1000
-CACHE_PATH=/var/folders/_8/jhkbxy_x5cbch45zszwb_g200000gn/T/shell_gpt/cache
-REQUEST_TIMEOUT=60
