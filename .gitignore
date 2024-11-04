@@ -3,13 +3,18 @@
 
 # Ignore everything by default.
 
-#Themes folders
+# Themes folders
 themes/
 
+# GitHub CLI
 gh/
 
 coc/
 
+# AI-oriented IDE settings
+zed/
+
+# MacOS metadata
 *.DS_Store
 
 # Bash stuff (profile just sources bashrc, since it's the only thing sourced
