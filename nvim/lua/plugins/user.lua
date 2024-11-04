@@ -5,18 +5,6 @@
 return {
 
   -- == Examples of Adding Plugins ==
-
-  "andweeb/presence.nvim",
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
   {
     "catppuccin/nvim",
     name = "catppucin",
@@ -30,8 +18,8 @@ return {
     "lervag/vimtex",
     ft = "tex",
     lazy = false,
-    config = function()
-      vim.g.vmitex_compiler_method = "latexmk"
+    init = function()
+      vim.g.vimtex_compiler_method = "latexmk"
       vim.g.vimtex_quickfix_open_on_warning = 0
       vim.g.vimtex_view_method = "skim"
     end,
@@ -72,6 +60,14 @@ return {
   {
     "sainnhe/everforest",
     config = function() vim.g.everforest_background = "soft" end,
+    lazy = true,
+  },
+  {
+    "morhetz/gruvbox",
+    config = function()
+      vim.cmd.colorscheme "gruvbox"
+      vim.o.background = "light"
+    end,
     lazy = false,
   },
 

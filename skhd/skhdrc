@@ -128,7 +128,7 @@ hyper - b : yabai -m space --balance
 
 # float / unfloat window and center on screen
 hyper - t : yabai -m window --toggle float;\
-          yabai -m window --grid 6:6:1:1:4:4
+          yabai -m window --grid 9:9:1:1:7:7
 
 # toggle window zoom
 hyper - f : yabai -m window --toggle zoom-fullscreen
