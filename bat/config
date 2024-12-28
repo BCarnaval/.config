@@ -1,2 +1,3 @@
 # Setting theme
 --theme="base16-256"
+--color=always

@@ -8,6 +8,11 @@ return {
   {
     "catppuccin/nvim",
     name = "catppucin",
+    lazy = true,
+  },
+  {
+    "shaunsingh/nord.nvim",
+    lazy = false,
   },
   {
     "hura/vim-asymptote",
@@ -67,6 +72,41 @@ return {
     config = function()
       vim.cmd.colorscheme "gruvbox"
       vim.o.background = "light"
+    end,
+    lazy = true,
+  },
+
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("codecompanion").setup {
+        adapters = {
+          openai = function()
+            return require("codecompanion.adapters").extend("openai", {
+              env = {
+                api_key = "cmd:cat ~/Desktop/Utility/ADMIN/PASSWDS/openai_code_companion_api_key.txt",
+              },
+              schema = {
+                model = {
+                  default = "gpt-4-turbo",
+                },
+              },
+            })
+          end,
+        },
+        strategies = {
+          chat = {
+            adapter = "openai",
+          },
+          inline = {
+            adapter = "openai",
+          },
+        },
+      }
     end,
     lazy = false,
   },

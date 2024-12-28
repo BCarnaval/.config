@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -62,8 +60,15 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { desc = "Buffers" },
-        -- quick save
-        -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+        -- Code Companion mappings
+        ["<Leader>a"] = { group = "Code Companion" },
+        ["<Leader>ac"] = { "<cmd>CodeCompanionChat<cr>", desc = "Open Chat" },
+        ["<Leader>ae"] = { "<cmd>CodeCompanionCmd<cr>", desc = "Execute Command" },
+        ["<Leader>am"] = { "<cmd>CodeCompanionActions<cr>", desc = "Display Companion Actions" },
+
+        -- Toggle term alway floating
+        ["<c-'>"] = { "<cmd>ToggleTerm direction=float<cr>" },
       },
       t = {
         -- setting a mapping to false will disable it
